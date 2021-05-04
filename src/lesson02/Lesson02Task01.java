@@ -1,8 +1,6 @@
 package lesson02;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.DoubleStream;
 
 public class Lesson02Task01 {
     public static void main(String[] args) {
