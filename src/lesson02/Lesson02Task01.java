@@ -20,7 +20,7 @@ public class Lesson02Task01 {
     }
 
     static void findAbsoluteMinimalNumber(double... args) {
-        double [] absValues = Arrays.stream(args)
+        double[] absValues = Arrays.stream(args)
                 .map(Lesson02Task01::getAbsoluteValue)
                 .toArray();
 
