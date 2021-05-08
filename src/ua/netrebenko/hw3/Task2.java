@@ -6,6 +6,15 @@ public class Task2 {
     }
 
     private static int countWords(String... args) {
-        return args.length;
+        short counter = 0;
+
+        for (String word : args) {
+            if (!hasDigit(word)) counter++;
+        }
+        return counter;
+    }
+
+    private static boolean hasDigit(String value) {
+        return value.matches(".*\\d+.*");
     }
 }

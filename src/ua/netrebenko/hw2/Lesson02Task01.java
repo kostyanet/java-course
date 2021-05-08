@@ -1,4 +1,4 @@
-package lesson02;
+package ua.netrebenko.hw2;
 
 import java.util.Arrays;
 

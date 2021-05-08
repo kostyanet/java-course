@@ -1,4 +1,4 @@
-package lesson01;
+package ua.netrebenko.hw1;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 

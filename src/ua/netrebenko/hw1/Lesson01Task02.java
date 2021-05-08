@@ -1,4 +1,4 @@
-package lesson01;
+package ua.netrebenko.hw1;
 
 public class Lesson01Task02 {
     public static void main(String[] args) {
