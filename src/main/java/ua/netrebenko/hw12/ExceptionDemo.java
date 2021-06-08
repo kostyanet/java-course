@@ -15,21 +15,29 @@ public class ExceptionDemo {
 
     public static void throwClassCastException() {
         Object obj = new Integer(3);
-        System.out.println((String) obj);
+        System.out.println(obj.toString());
     }
 
     public static void throwNullPointerException() {
         String x = null;
-        System.out.println(x.charAt(1));
+        if (x != null)
+            System.out.println(x.charAt(1));
     }
 
     public static void throwNumberFormatException() {
         String x = "1.s2";
-        System.out.println(Float.parseFloat(x));
+        try {
+            System.out.println(Float.parseFloat(x));
+        } catch (NumberFormatException e) {
+            // ... do stuff
+        }
     }
 
     public static void throwArrayIndexOutOfBoundsException() {
         int[] arr = {5, 7};
-        System.out.println(arr[33]);
+        int index = 33;
+
+        if (index < arr.length)
+            System.out.println(arr[33]);
     }
 }
