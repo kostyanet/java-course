@@ -4,15 +4,10 @@ import java.io.*;
 
 public class Demo {
     public static String read(String path) {
-        BufferedReader reader = null;
         StringBuilder stringBuilder = new StringBuilder();
-        ;
         String currentString;
 
-        try {
-            //открываем файл по пути
-            reader = new BufferedReader(new FileReader(path));
-
+        try (BufferedReader reader = new BufferedReader(new FileReader(path));) {
             //построчно считываем файл
             while ((currentString = reader.readLine()) != null) {
                 stringBuilder.append(currentString);
@@ -21,14 +16,6 @@ public class Demo {
 
         } catch (IOException e) {
             System.out.println("File not found!");
-
-        } finally {
-            try {
-                if (reader != null)
-                    reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
 
         //возвращаем вычитанный текст в строке
