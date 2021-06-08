@@ -7,7 +7,7 @@ interface Pow {
 
 public class Task2 {
     public static void main(String[] args) {
-        com.alevel.Pow calc = (num, pow) -> {
+        Pow calc = (num, pow) -> {
             double result = num;
             for (int i = 1; i < pow; i++) {
                 result *= num;
