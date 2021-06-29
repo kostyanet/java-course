@@ -1,7 +1,5 @@
 package ua.netrebenko.hw17;
 
-import com.sun.istack.internal.Nullable;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
